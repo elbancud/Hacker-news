@@ -1,6 +1,6 @@
 import { makeSchema } from 'nexus';
 import { join } from 'path';
-
+import * as types from '../graphql';
 /**
  * What's happening here
  * - Types which will be passed as an array
@@ -9,7 +9,7 @@ import { join } from 'path';
  * - typegen - creates a typegen instance
  */
 export const schema = makeSchema({
-  types: [],
+  types,
   outputs: {
     schema: join(process.cwd(), 'schema.graphql'),
     typegen: join(process.cwd(), 'nexus-typegen.ts'),
