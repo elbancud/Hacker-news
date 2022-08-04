@@ -1,6 +1,6 @@
 <div align="center" display="flex">
 
-<img src="https://tenor.com/view/office-gif-23066448" />
+<img src="https://phasrmedia.com/wp-content/uploads/2021/01/Funniest-Michael-Scott-Quotes-1-1.png" width="300" height="150"/>
 </div>
 
 ## Hacker-news-ts
@@ -24,3 +24,29 @@ $ npm install apollo-server@latest graphql@latest nexus@latest
 ### Href
 
 https://www.howtographql.com/typescript-apollo/1-getting-started/
+
+### Technologies
+
+- [Apollo Server](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-server) - A GraphQL server
+- [Nexus](https://github.com/graphql-nexus/nexus) - For creating typesafe GraphQL Schema
+-
+
+### Runs
+
+```bash
+$ npx ts-node --transpile-only src/schema /This will generate a schema and typegen
+```
+
+### Configs
+
+@package.json
+
+```
+'dev': 'ts-node --transpile-only --no-notify --exit-child src/index.ts'
+'generate': 'ts-node --transpile-only src/schema.ts'
+```
+
+### Terminologies used
+
+- process.cwd() - current working directory
+-
