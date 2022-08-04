@@ -4,7 +4,9 @@
   "description": "This will be a clone for hacker news via the tutorial of GraphQL TS &amp; Apollo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
+    "generate": "ts-node --transpile-only src/schema.ts" 
   },
   "repository": {
     "type": "git",
