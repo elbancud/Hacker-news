@@ -1,6 +1,6 @@
 <div align="center" display="flex">
 
-<img src="https://tenor.com/view/office-gif-23066448" />
+<img src="https://www.looper.com/214653/the-offices-michael-scott-was-almost-a-murderer/" width="300" height="150"/>
 </div>
 
 ## Hacker-news-ts
