@@ -1,6 +1,6 @@
 <div align="center" display="flex">
 
-<img src="https://www.looper.com/214653/the-offices-michael-scott-was-almost-a-murderer/" width="300" height="150"/>
+<img src="https://phasrmedia.com/wp-content/uploads/2021/01/Funniest-Michael-Scott-Quotes-1-1.png" width="300" height="150"/>
 </div>
 
 ## Hacker-news-ts
