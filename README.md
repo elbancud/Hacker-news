@@ -1,10 +1,9 @@
 <div align="center" display="flex">
 
-![logo](https://tenor.com/search/michaelscott-gifs)
-
+<img src="https://tenor.com/view/office-gif-23066448" />
 </div>
 
-# Hacker-news-ts
+## Hacker-news-ts
 
 This will be a clone for hacker news via the tutorial of GraphQL TS &amp; Apollo
 
