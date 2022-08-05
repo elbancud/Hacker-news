@@ -12,14 +12,25 @@ This will be a clone for hacker news via the tutorial of GraphQL TS &amp; Apollo
 > Typescript: Version under development ^@4.3.5
 > Ts-Node: Version under development @^1.1.8
 
+General
+
 ```bash
 $ npm init -y
 $ npm install --save-dev typescript@latest ts-node@latest
 $ touch tsconfig.json
 $ npm install apollo-server@latest graphql@latest nexus@latest
+
 ```
 
-> @^3.1.1 | @^15.5.1 | 1.1.0
+> @^3.1.1 | @^15.5.1 | @^1.1.0 | ^@3.5.0 | ^@3.5.0
+
+### Prisma Side
+
+```bash
+$ npm install prisma --save-dev
+$ npm install @prisma/client
+$ npx prisma migrate dev --name "init"
+```
 
 ### Href
 
@@ -50,4 +61,4 @@ $ npx ts-node --transpile-only src/schema /This will generate a schema and typeg
 ### Terminologies used
 
 - process.cwd() - current working directory
--
+- [query, mutation] = types
