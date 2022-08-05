@@ -47,7 +47,7 @@ export const linkQuery = extendType({
       type: 'Link',
       resolve(parent, args, context, info) {
         // This will be the implementation of the type
-        return links;
+        return context.prisma.link.findMany();
       },
     });
   },
@@ -65,15 +65,12 @@ export const LinkMutation = extendType({
       },
       resolve(parent, args, context) {
         const { description, url } = args;
-        let idCount = links.length + 1;
-
-        const link = {
-          id: idCount,
-          description,
-          url,
-        };
-
-        links.push(link);
+        const link = context.prisma.link.create({
+          data: {
+            description,
+            url,
+          },
+        });
         return link;
       },
     });
