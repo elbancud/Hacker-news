@@ -32,6 +32,13 @@ $ npm install @prisma/client
 $ npx prisma migrate dev --name "init"
 ```
 
+### Auth
+
+```bash
+$ npm install bycriptjs jsonwebtoken
+
+```
+
 ### Href
 
 https://www.howtographql.com/typescript-apollo/1-getting-started/

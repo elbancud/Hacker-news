@@ -1,6 +1,6 @@
 import { makeSchema } from 'nexus';
 import { join } from 'path';
-import * as types from '../graphql';
+import * as types from './graphql';
 /**
  * What's happening here
  * - Types which will be passed as an array
