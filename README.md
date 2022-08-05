@@ -41,7 +41,8 @@ https://www.howtographql.com/typescript-apollo/2-a-simple-query/
 
 - [Apollo Server](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-server) - A GraphQL server
 - [Nexus](https://github.com/graphql-nexus/nexus) - For creating typesafe GraphQL Schema
--
+- [Prisma](https://www.prisma.io/docs) - ORM
+- [GraphQL](https://www.howtographql.com/) - REST API alternative
 
 ### Runs
 
@@ -62,3 +63,4 @@ $ npx ts-node --transpile-only src/schema /This will generate a schema and typeg
 
 - process.cwd() - current working directory
 - [query, mutation] = types
+- [@relation](https://www.prisma.io/docs/concepts/components/prisma-schema/relations#the-relation-attribute) - for setting attribute of a model
