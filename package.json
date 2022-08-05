@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
-    "generate": "ts-node --transpile-only src/schema.ts" 
+    "generate": "ts-node --transpile-only src/schema.ts"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,12 @@
   },
   "homepage": "https://github.com/elbancud/Hacker-news#readme",
   "devDependencies": {
+    "prisma": "^4.1.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "@prisma/client": "^4.1.1",
     "apollo-server": "^3.10.0",
     "graphql": "^16.5.0",
     "nexus": "^1.3.0"
