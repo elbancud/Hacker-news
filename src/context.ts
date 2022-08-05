@@ -8,6 +8,8 @@ export interface Context {
   prisma: PrismaClient;
   userId?: number;
 }
+// TODO: export the userId token coming from the request header auth
+// decodeAuthHeader()
 export const context = ({ req }: { req: Request }): Context => {
   const token =
     req && req.headers.authorization

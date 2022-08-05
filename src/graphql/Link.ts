@@ -1,5 +1,5 @@
 import { extendType, nonNull, objectType, stringArg } from 'nexus';
-import { NexusGenObjects } from '../nexus-typegen';
+import { NexusGenObjects } from '../../nexus-typegen';
 
 // TODO: Define a link type with fields
 export const Link = objectType({
@@ -77,10 +77,20 @@ export const LinkMutation = extendType({
       },
       resolve(parent, args, context) {
         const { description, url } = args;
+        const { userId } = context;
+        if (!userId) {
+          throw new Error('Cannot post with logging in');
+        }
+
         const link = context.prisma.link.create({
           data: {
             description,
             url,
+            postedBy: {
+              connect: {
+                id: userId,
+              },
+            },
           },
         });
         return link;
