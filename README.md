@@ -24,6 +24,7 @@ $ npm install apollo-server@latest graphql@latest nexus@latest
 ### Href
 
 https://www.howtographql.com/typescript-apollo/1-getting-started/
+https://www.howtographql.com/typescript-apollo/2-a-simple-query/
 
 ### Technologies
 
